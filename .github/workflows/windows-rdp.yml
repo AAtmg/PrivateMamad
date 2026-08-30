@@ -18,7 +18,7 @@ jobs:
       - name: 2. Create Admin Account
         run: |
           $username = "AAtmg26"
-          $password = ConvertTo-SecureString "YS8X2PH9XHC2" -AsPlainText -Force
+          $password = ConvertTo-SecureString "AAtmg26@2026!" -AsPlainText -Force
 
           # Create user if not exists
           if (-not (Get-LocalUser -Name $username -ErrorAction SilentlyContinue)) {
@@ -54,7 +54,7 @@ jobs:
           Write-Host " >>> RDP SERVER IS READY <<< " -ForegroundColor Cyan
           Write-Host " Tailscale IP : $ts_ip " -ForegroundColor Yellow
           Write-Host " Username : AAtmg26 " -ForegroundColor Yellow
-          Write-Host " Password : YS8X2PH9XHC2 " -ForegroundColor Yellow
+          Write-Host " Password : AAtmg26@2026! " -ForegroundColor Yellow
           Write-Host " Connect using mstsc -> $ts_ip " -ForegroundColor Magenta
           Write-Host "==============================================" -ForegroundColor Green
 
